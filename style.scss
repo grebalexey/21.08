@@ -1,0 +1,49 @@
+$mainColor:#000;
+
+@mixin isMobile(){
+    @media(max-width:1024px){
+        @content
+    }
+}
+
+body{
+    color:$mainColor;
+    background-color: $mainColor;
+    background-color: rgba(#000000, .5);
+}
+
+.item{
+    background-color: red;
+    height: 500px; 
+    width: 500px;
+    @include isMobile(){
+        height: 300px;
+        width: 300px;
+    }
+
+    &__card{
+        background-color: yellow;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@for $i from 1 through 3{
+    .item-#{$i} {width: 280px*$i;}
+}
+
+
+%text{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.text-1{
+    @extend %text;
+    color: red;
+}
+
+.text-2{
+    @extend %text;
+    color: yellow;
+}

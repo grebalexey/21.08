@@ -1,0 +1,47 @@
+body {
+  color: #000;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.item {
+  background-color: red;
+  height: 500px;
+  width: 500px;
+}
+@media (max-width: 1024px) {
+  .item {
+    height: 300px;
+    width: 300px;
+  }
+}
+.item__card {
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+}
+
+.item-1 {
+  width: 280px;
+}
+
+.item-2 {
+  width: 560px;
+}
+
+.item-3 {
+  width: 840px;
+}
+
+.text-2, .text-1 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.text-1 {
+  color: red;
+}
+
+.text-2 {
+  color: yellow;
+}
